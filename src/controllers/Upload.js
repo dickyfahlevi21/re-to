@@ -23,7 +23,7 @@ const uploadCloudinary = async (req, res) => {
     .upload(file)
     .then((result) => {
       const image = result.url;
-      return { urlImage: image };
+      return { url_photo: image };
     })
     .catch((error) => {
       throw new Error(error);
