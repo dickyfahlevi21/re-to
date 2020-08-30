@@ -1,0 +1,14 @@
+.simple-table > table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.simple-table th,
+td {
+  padding: 15px;
+}
+
+h1 {
+  color: maroon;
+}
