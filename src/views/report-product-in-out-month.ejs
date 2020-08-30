@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reports</title>
-
     <style>
-        .simple-table>table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-        
-        .simple-table th,
-        td {
-            padding: 15px;
-        }
+      .simple-table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      .simple-table {
+        margin: 5% auto 10% auto;
+      }
+
+      .simple-table th,
+      td {
+        padding: 15px;
+      }
+      .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .container h2 {
+        color: white;
+        background-color: black;
+        text-align: center;
+        padding: 2%;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <table class="simple-table">
+  <body>
+    <div class="container">
+      <h2>Laporan Barang Keluar - Masuk</h2>
+      <table class="simple-table">
         <tr>
-            <th>Tanggal</th>
-            <th>Total Barang Masuk</th>
-            <th>Total Barang Keluar</th>
+          <th>Tanggal</th>
+          <th>Total Barang Masuk</th>
+          <th>Total Barang Keluar</th>
         </tr>
 
         <tr>
-            <td>
-                <%= reports.dateNow %>
-            </td>
-            <td>
-                <%= reports.totalProductIn %>
-            </td>
-            <td>
-                <%= reports.totalProductOut %>
-            </td>
+          <td><%= reports.dateNow %></td>
+          <td><%= reports.totalProductIn %></td>
+          <td><%= reports.totalProductOut %></td>
         </tr>
-
-    </table>
-</body>
-
+      </table>
+    </div>
+  </body>
 </html>

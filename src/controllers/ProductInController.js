@@ -83,7 +83,7 @@ class ProductInController {
 
   static async createProductIn(req, res) {
     try {
-      const product = await Product.findByPk(req.body.ProductId);
+      const product = await Product.findByPk(req.body.product_id);
       if (!product) {
         throw Error("product references not found");
       } else {
@@ -93,7 +93,7 @@ class ProductInController {
           { stock: newStock },
           {
             where: {
-              id: req.body.ProductId,
+              id: req.body.product_id,
             },
           }
         );

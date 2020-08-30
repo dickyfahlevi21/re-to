@@ -3,23 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/style.css" />
     <title>Reports</title>
+    <style>
+      .simple-table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      .simple-table {
+        margin: 5% auto 10% auto;
+      }
+
+      .simple-table th,
+      td {
+        padding: 15px;
+      }
+      .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .container h2 {
+        color: white;
+        background-color: black;
+        text-align: center;
+        padding: 2%;
+      }
+    </style>
   </head>
 
   <body>
-    <table class="simple-table">
-      <tr>
-        <th>Tanggal</th>
-        <th>Total</th>
-        <th>Product</th>
-      </tr>
+    <div class="container">
+      <table class="simple-table">
+        <tr>
+          <th>Tanggal</th>
+          <th>Total</th>
+          <th>Product</th>
+        </tr>
 
-      <tr>
-        <td><%= reports.date %></td>
-        <td><%= reports.total %></td>
-        <td><%= reports.ProductsId %></td>
-      </tr>
-    </table>
+        <tr>
+          <td><%= reports.date %></td>
+          <td><%= reports.total %></td>
+          <td><%= reports.product_id %></td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>

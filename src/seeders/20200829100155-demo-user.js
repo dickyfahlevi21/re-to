@@ -20,7 +20,7 @@ module.exports = {
       {
         full_name: "Dicky Dua",
         username: "dickydua",
-        email: "dicky.dua@gmail.com",
+        email: "dicky.fahlevi21@gmail.com",
         phone_number: "082134890325",
         role: "supplier",
         salt: "###",
